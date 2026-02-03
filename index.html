@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alaska Tough. Science | Arctic Proving Ground & Resort</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/lucide.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap');
+        
+        :root {
+            --construction-orange: #f97316;
+            --deep-black: #0a0a0a;
+            --industrial-gray: #171717;
+            --frost: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--deep-black);
+            color: var(--frost);
+            scroll-behavior: smooth;
+        }
+
+        .mono { font-family: 'JetBrains+Mono', monospace; }
+        
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 1)),
+                        url('https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .glass-card {
+            background: rgba(23, 23, 23, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(249, 115, 22, 0.1);
+        }
+
+        .accent-border {
+            border-left: 4px solid var(--construction-orange);
+        }
+
+        .btn-primary {
+            background-color: var(--construction-orange);
+            color: black;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #fb923c;
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(249, 115, 22, 0.5);
+        }
+
+        .ticker-stripe {
+            background: repeating-linear-gradient(
+                45deg,
+                var(--construction-orange),
+                var(--construction-orange) 20px,
+                #000 20px,
+                #000 40px
+            );
+        }
+    </style>
+</head>
+<body class="selection:bg-orange-500/30">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card border-b border-orange-500/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i data-lucide="shield-alert" class="text-orange-500 w-8 h-8"></i>
+                <div class="flex flex-col leading-none">
+                    <span class="text-xl font-extrabold tracking-tighter uppercase italic">Alaska Tough</span>
+                    <span class="text-[10px] font-black tracking-[0.3em] uppercase text-orange-500">Science Sector</span>
+                </div>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest text-slate-400">
+                <a href="#capabilities" class="hover:text-orange-500 transition-colors">Capabilities</a>
+                <a href="#resort" class="hover:text-orange-500 transition-colors">The Resort</a>
+                <a href="#mission" class="hover:text-orange-500 transition-colors">Global Mission</a>
+                <a href="#contact" class="text-orange-500 border border-orange-500/30 px-4 py-1 rounded-full hover:bg-orange-500/10 transition-all">Submit Specs</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center hero-gradient pt-20 px-6">
+        <div class="max-w-5xl text-center">
+            <div class="inline-block px-4 py-1 rounded-sm bg-orange-500 text-black text-xs font-black tracking-[0.3em] uppercase mb-8">
+                Warning: Extreme Testing Environment // 64.8401° N
+            </div>
+            <h1 class="text-6xl md:text-9xl font-black tracking-tighter mb-6 leading-[0.9] uppercase">
+                ALASKA <span class="text-orange-500 italic">TOUGH.</span><br/> SCIENCE <span class="text-orange-500">PROVEN.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed font-medium">
+                The world’s most rugged build-to-suit cold weather proving ground. We build for the data. We host for the team.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="btn-primary px-10 py-5 rounded-sm font-black text-lg uppercase tracking-wider">Start Your Build</a>
+                <a href="#capabilities" class="glass-card px-10 py-5 rounded-sm font-black text-lg uppercase tracking-wider hover:bg-white/5 transition-all">View Assets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Construction Ticker -->
+    <div class="py-6 overflow-hidden whitespace-nowrap border-y border-orange-500/20 bg-black">
+        <div class="flex animate-[scroll_25s_linear_infinite] gap-12 text-sm font-black uppercase tracking-[0.25em] text-orange-500">
+            <span class="flex items-center gap-2"><i data-lucide="alert-triangle" class="w-4 h-4"></i> Sub-Zero Validation</span>
+            <span class="flex items-center gap-2"><i data-lucide="alert-triangle" class="w-4 h-4"></i> Heated Garages</span>
+            <span class="flex items-center gap-2"><i data-lucide="alert-triangle" class="w-4 h-4"></i> Mobile Field Labs</span>
+            <span class="flex items-center gap-2"><i data-lucide="alert-triangle" class="w-4 h-4"></i> Aurora Research</span>
+            <span class="flex items-center gap-2"><i data-lucide="alert-triangle" class="w-4 h-4"></i> Luxury Crew Suites</span>
+            <span class="flex items-center gap-2"><i data-lucide="alert-triangle" class="w-4 h-4"></i> EV Battery Stress</span>
+            <span class="flex items-center gap-2"><i data-lucide="alert-triangle" class="w-4 h-4"></i> Military Grade</span>
+            <span class="flex items-center gap-2"><i data-lucide="alert-triangle" class="w-4 h-4"></i> Sub-Zero Validation</span>
+        </div>
+    </div>
+
+    <!-- Technical Capabilities -->
+    <section id="capabilities" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-orange-500 font-black tracking-widest uppercase mb-4 text-xs">Facility Specs // 01</h2>
+                <h3 class="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none">Hardcore Tech.<br/>Nerdy Precision.</h3>
+            </div>
+            <div class="bg-orange-500 text-black p-4 font-black uppercase text-xs tracking-tighter italic">
+                "We provide the lifts, the heat, and the wash.<br/>You bring the science shit."
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-10 rounded-sm accent-border">
+                <i data-lucide="anvil" class="text-orange-500 w-12 h-12 mb-8"></i>
+                <h4 class="text-2xl font-black mb-4 uppercase italic">Heated Garages</h4>
+                <p class="text-slate-400 leading-relaxed mb-8">Industrial-scale bays with high-clearance heavy lifts. Complete wrenching comfort while it’s -40° outside the roll-up doors.</p>
+                <ul class="mono text-xs text-orange-500 space-y-3 font-bold">
+                    <li class="flex items-center gap-2"><i data-lucide="plus" class="w-3 h-3"></i> Dedicated 10G Data Pipe</li>
+                    <li class="flex items-center gap-2"><i data-lucide="plus" class="w-3 h-3"></i> Pneumatic Tool Arrays</li>
+                    <li class="flex items-center gap-2"><i data-lucide="plus" class="w-3 h-3"></i> 24/7 Security Access</li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 rounded-sm accent-border">
+                <i data-lucide="flame" class="text-orange-500 w-12 h-12 mb-8"></i>
+                <h4 class="text-2xl font-black mb-4 uppercase italic">Decontamination</h4>
+                <p class="text-slate-400 leading-relaxed mb-8">Heated high-pressure wash systems. Strip Alaskan road grime instantly to maintain sensor calibration and paint integrity.</p>
+                <ul class="mono text-xs text-orange-500 space-y-3 font-bold">
+                    <li class="flex items-center gap-2"><i data-lucide="plus" class="w-3 h-3"></i> Undercarriage Blast</li>
+                    <li class="flex items-center gap-2"><i data-lucide="plus" class="w-3 h-3"></i> Thermal Drying Room</li>
+                    <li class="flex items-center gap-2"><i data-lucide="plus" class="w-3 h-3"></i> Particle Filtration</li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 rounded-sm accent-border">
+                <i data-lucide="radio" class="text-orange-500 w-12 h-12 mb-8"></i>
+                <h4 class="text-2xl font-black mb-4 uppercase italic">Field Support</h4>
+                <p class="text-slate-400 leading-relaxed mb-8">Custom mobile test stations and heavy-duty chase vehicles. We shadow your assets into the deepest freeze of the interior.</p>
+                <ul class="mono text-xs text-orange-500 space-y-3 font-bold">
+                    <li class="flex items-center gap-2"><i data-lucide="plus" class="w-3 h-3"></i> Satellite Uplink</li>
+                    <li class="flex items-center gap-2"><i data-lucide="plus" class="w-3 h-3"></i> Mobile Command Vans</li>
+                    <li class="flex items-center gap-2"><i data-lucide="plus" class="w-3 h-3"></i> Extreme Recovery Gear</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Resort -->
+    <section id="resort" class="py-24 bg-zinc-950 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 ticker-stripe opacity-30"></div>
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1 relative group">
+                <div class="absolute -inset-1 bg-orange-500 rounded-sm blur opacity-10 group-hover:opacity-30 transition"></div>
+                <img src="https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&fit=crop&q=80&w=1000" alt="Aurora" class="relative rounded-sm grayscale hover:grayscale-0 transition-all duration-1000 border border-orange-500/20">
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-orange-500 font-black tracking-widest uppercase mb-4 text-xs">The Stay // 02</h2>
+                <h3 class="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none mb-8">Elite Recovery.<br/>Dark Sky Science.</h3>
+                <p class="text-lg text-slate-300 mb-10 leading-relaxed font-medium">
+                    The data shouldn't suffer because the team is exhausted. We provide premium living conditions for high-level engineers who live on the edge.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="flex flex-col gap-4">
+                        <i data-lucide="layout" class="text-orange-500 w-8 h-8"></i>
+                        <h5 class="font-black text-xl uppercase italic">Full Suites</h5>
+                        <p class="text-sm text-slate-500">Ergonomic R&D workstations, blackout tech, and full climate control for restorative rest.</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <i data-lucide="coffee" class="text-orange-500 w-8 h-8"></i>
+                        <h5 class="font-black text-xl uppercase italic">High-Fuel Ops</h5>
+                        <p class="text-sm text-slate-500">24/7 catering and high-protein kitchen service for teams running on Arctic time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="py-32 px-6 max-w-7xl mx-auto text-center">
+        <h2 class="text-orange-500 font-black tracking-widest uppercase mb-12 text-xs italic">Global Non-Profit Mission</h2>
+        <div class="max-w-4xl mx-auto">
+            <p class="text-3xl md:text-5xl font-black tracking-tighter uppercase leading-tight text-white mb-16">
+                "We provide the infrastructure so global innovators can build for the extreme. Profiting the world from the heart of Alaska."
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-zinc-900 border border-orange-500/10 p-6">
+                    <div class="text-3xl font-black text-orange-500 mb-1">64.8°N</div>
+                    <div class="text-[10px] uppercase font-black text-slate-500">Prime Latitude</div>
+                </div>
+                <div class="bg-zinc-900 border border-orange-500/10 p-6">
+                    <div class="text-3xl font-black text-orange-500 mb-1">-40°</div>
+                    <div class="text-[10px] uppercase font-black text-slate-500">Testing Floor</div>
+                </div>
+                <div class="bg-zinc-900 border border-orange-500/10 p-6">
+                    <div class="text-3xl font-black text-orange-500 mb-1">100%</div>
+                    <div class="text-[10px] uppercase font-black text-slate-500">Non-Profit</div>
+                </div>
+                <div class="bg-zinc-900 border border-orange-500/10 p-6">
+                    <div class="text-3xl font-black text-orange-500 mb-1">∞</div>
+                    <div class="text-[10px] uppercase font-black text-slate-500">Global Impact</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-black relative">
+        <div class="absolute inset-0 ticker-stripe opacity-5"></div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="bg-orange-500 text-black rounded-sm p-8 md:p-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <div>
+                        <h3 class="text-5xl md:text-6xl font-black tracking-tighter mb-8 uppercase italic leading-none">Build-to-Suit<br/>Consultation</h3>
+                        <p class="text-xl mb-10 font-bold leading-tight">We are currently in the engineering phase. What do you need us to build into the foundation?</p>
+                        <div class="space-y-6 text-sm font-black uppercase tracking-widest">
+                            <div class="flex items-center gap-4"><i data-lucide="check-square" class="w-6 h-6"></i> Custom Lifts</div>
+                            <div class="flex items-center gap-4"><i data-lucide="check-square" class="w-6 h-6"></i> Secure Data Vaults</div>
+                            <div class="flex items-center gap-4"><i data-lucide="check-square" class="w-6 h-6"></i> Material stress pads</div>
+                        </div>
+                    </div>
+                    <form id="contactForm" class="space-y-4">
+                        <input type="text" placeholder="FULL NAME" class="w-full px-6 py-4 bg-black/10 border-2 border-black/20 text-black placeholder:text-black/50 font-black outline-none focus:bg-white/10 transition-all">
+                        <input type="text" placeholder="COMPANY (CAR / AERO / MIL)" class="w-full px-6 py-4 bg-black/10 border-2 border-black/20 text-black placeholder:text-black/50 font-black outline-none focus:bg-white/10 transition-all">
+                        <select class="w-full px-6 py-4 bg-black/10 border-2 border-black/20 text-black font-black outline-none focus:bg-white/10 transition-all">
+                            <option>AUTOMOTIVE PROTOTYPING</option>
+                            <option>AEROSPACE VALIDATION</option>
+                            <option>HOUSING MATERIALS</option>
+                            <option>ATMOSPHERIC SCIENCE</option>
+                            <option>OTHER "SCIENCE SHIT"</option>
+                        </select>
+                        <textarea placeholder="DESCRIBE YOUR REQUIRED INFRASTRUCTURE" rows="4" class="w-full px-6 py-4 bg-black/10 border-2 border-black/20 text-black placeholder:text-black/50 font-black outline-none focus:bg-white/10 transition-all"></textarea>
+                        <button type="submit" class="w-full bg-black text-orange-500 font-black py-6 text-xl hover:bg-zinc-900 transition-all uppercase tracking-[0.2em] shadow-2xl">Submit Requirements</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-6 border-t border-orange-500/10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="flex items-center gap-2">
+                <i data-lucide="shield-alert" class="text-orange-500 w-6 h-6"></i>
+                <div class="flex flex-col leading-none">
+                    <span class="text-lg font-black tracking-tighter uppercase italic">Alaska Tough</span>
+                    <span class="text-[8px] font-black tracking-[0.4em] uppercase text-orange-500">Science Sector</span>
+                </div>
+            </div>
+            <div class="mono text-[10px] text-zinc-500 tracking-[0.3em] uppercase text-center md:text-left font-bold">
+                NFP Entity • Fairbanks, AK • Built for the Planet • Safety First
+            </div>
+            <div class="flex gap-8">
+                <a href="#" class="text-zinc-500 hover:text-orange-500 transition-colors"><i data-lucide="linkedin"></i></a>
+                <a href="#" class="text-zinc-500 hover:text-orange-500 transition-colors"><i data-lucide="instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Message Box -->
+    <div id="successBox" class="fixed bottom-10 right-10 glass-card p-6 rounded-sm border-2 border-orange-500 hidden z-[100]">
+        <div class="flex items-center gap-4">
+            <div class="bg-orange-500 p-2 text-black"><i data-lucide="check" class="w-5 h-5"></i></div>
+            <div>
+                <p class="font-black uppercase italic text-orange-500">Specs Logged.</p>
+                <p class="text-xs font-bold text-slate-400">Engineering will contact you.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const successBox = document.getElementById('successBox');
+            successBox.classList.remove('hidden');
+            this.reset();
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 6000);
+        });
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes scroll {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
