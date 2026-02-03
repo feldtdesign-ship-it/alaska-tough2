@@ -105,7 +105,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?q=80&w=2000')] bg-cover bg-center grayscale-img opacity-40"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
         <div class="absolute inset-0 blueprint-grid opacity-20"></div>
@@ -369,12 +369,23 @@
 
     <script>
         lucide.createIcons();
-        window.onscroll = function() {
+
+        // SCROLL RESET SCRIPT
+        // This ensures the page always starts at the top on a fresh load or refresh.
+        window.onload = function() {
+            window.scrollTo(0, 0);
+            updateScrollProgress();
+        };
+
+        function updateScrollProgress() {
             let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             let scrolled = (winScroll / height) * 100;
-            document.getElementById("scrollProgress").style.width = scrolled + "%";
-        };
+            const bar = document.getElementById("scrollProgress");
+            if (bar) bar.style.width = scrolled + "%";
+        }
+
+        window.onscroll = updateScrollProgress;
 
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
